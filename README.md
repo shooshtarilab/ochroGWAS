@@ -1,7 +1,7 @@
-# ATAC.Enrich
+# EPI.Enrich
 Pipeline for automatic integration of open chromatin regions (peaks) and GWAS data.
 
-# Bulk ATAC-seq data
+# Bulk data
 
 ## Required files:
 <ol>
