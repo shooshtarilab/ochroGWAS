@@ -1,4 +1,4 @@
-# ATAC.Integrate
+# ATAC.Enrich
 Pipeline for automatic integration of open chromatin regions (peaks) and GWAS data.
 
 # Bulk ATAC-seq data
