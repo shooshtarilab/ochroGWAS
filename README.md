@@ -8,6 +8,7 @@ Pipeline for automatic integration of open chromatin regions (peaks) and GWAS da
   <li> Simple BED files containing open chromatin region base-pair locations
     <ol>
       <li> Format: CHRX -- Start -- End </li>
+      <li> ***Important: Ensure that each individual cell type is assigned a single .bed file containing peaks for the entire genome, and is named without any spaces. (i.e. CD14.positive.monocyte.bed)*** </li>
     </ol>
   </li>
   <li> PLINK .bim files </li>
@@ -15,6 +16,7 @@ Pipeline for automatic integration of open chromatin regions (peaks) and GWAS da
   <li> Baseline LD file for reference genome </li>
   <li> No HLA weights for hapmap 3 </li>
   <li> GWAS .sumstats file </li>
+</ol>
 
 
       
