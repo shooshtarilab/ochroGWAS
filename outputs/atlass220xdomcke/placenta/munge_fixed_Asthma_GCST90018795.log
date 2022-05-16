@@ -1,0 +1,52 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2-cts /home/bqian/projects/def-pshoosht/bqian/Rscripts/GWASscript/downloads/set2/secondRun/munge_fixed_Asthma_GCST90018795.sumstats.gz \
+--ref-ld-chr /home/bqian/scratch/ochrodbProject/data/hg19/baseline/baselineLD. \
+--out ./atlasGWAS/munge_fixed_Asthma_GCST90018795 \
+--ref-ld-chr-cts ./noRef.ldct \
+--w-ld-chr /home/bqian/scratch/ochrodbProject/data/hg19/weights_hm3_no_hla/weights. 
+
+Beginning analysis at Sun Apr  3 13:47:22 2022
+Reading summary statistics from /home/bqian/projects/def-pshoosht/bqian/Rscripts/GWASscript/downloads/set2/secondRun/munge_fixed_Asthma_GCST90018795.sumstats.gz ...
+Read summary statistics for 2162655 SNPs.
+Reading reference panel LD Score from /home/bqian/scratch/ochrodbProject/data/hg19/baseline/baselineLD.[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1190321 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /home/bqian/scratch/ochrodbProject/data/hg19/weights_hm3_no_hla/weights.[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1242190 SNPs.
+After merging with reference panel LD, 158919 SNPs remain.
+After merging with regression SNP LD, 144842 SNPs remain.
+WARNING: number of SNPs less than 200k; this is almost always bad.
+Removed 0 SNPs with chi^2 > 179.0 (144842 SNPs remain)
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/Erythroblasts.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/Extravillous.trophoblasts.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/IGFBP1_DKK1.positive.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/Lymphoid.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/Myeloid.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/PAEP_MECOM.positive.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/Smooth.muscle.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/Stromal.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/Syncytiotrophoblasts.and.villous.cytotrophoblasts.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/Trophoblast.giant.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/placenta/step2/Vascular.endothelial.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Results printed to ./atlasGWAS/munge_fixed_Asthma_GCST90018795.cell_type_results.txt
+Analysis finished at Sun Apr  3 13:49:14 2022
+Total time elapsed: 1.0m:51.89s
