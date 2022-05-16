@@ -1,0 +1,52 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2-cts /home/bqian/projects/def-pshoosht/bqian/Rscripts/GWASscript/downloads/set5/secondRun/munge_fixed_Colorectal_cancer_GCST90018808.sumstats.gz \
+--ref-ld-chr /home/bqian/scratch/ochrodbProject/data/hg19/baseline/baselineLD. \
+--out ./atlasGWAS/munge_fixed_Colorectal_cancer_GCST90018808 \
+--ref-ld-chr-cts ./noRef.ldct \
+--w-ld-chr /home/bqian/scratch/ochrodbProject/data/hg19/weights_hm3_no_hla/weights. 
+
+Beginning analysis at Sun Apr  3 12:50:52 2022
+Reading summary statistics from /home/bqian/projects/def-pshoosht/bqian/Rscripts/GWASscript/downloads/set5/secondRun/munge_fixed_Colorectal_cancer_GCST90018808.sumstats.gz ...
+Read summary statistics for 1143521 SNPs.
+Reading reference panel LD Score from /home/bqian/scratch/ochrodbProject/data/hg19/baseline/baselineLD.[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1190321 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /home/bqian/scratch/ochrodbProject/data/hg19/weights_hm3_no_hla/weights.[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1242190 SNPs.
+After merging with reference panel LD, 86684 SNPs remain.
+After merging with regression SNP LD, 79133 SNPs remain.
+WARNING: number of SNPs less than 200k; this is almost always bad.
+Removed 0 SNPs with chi^2 > 179.0 (79133 SNPs remain)
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/cerebrum/step2/Astrocytes.Oligodendrocytes.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/cerebrum/step2/Astrocytes.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/cerebrum/step2/Excitatory.Neurons.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Traceback (most recent call last):
+  File "/home/bqian/scratch/ochrodbProject/ldsc/ldsc.py", line 646, in <module>
+    sumstats.cell_type_specific(args, log)
+  File "/scratch/bqian/ochrodbProject/ldsc/ldscore/sumstats.py", line 300, in cell_type_specific
+    twostep=None, old_weights=True)
+  File "/scratch/bqian/ochrodbProject/ldsc/ldscore/regressions.py", line 346, in __init__
+    slow=slow, step1_ii=step1_ii, old_weights=old_weights)
+  File "/scratch/bqian/ochrodbProject/ldsc/ldscore/regressions.py", line 208, in __init__
+    jknife = jk.LstsqJackknifeFast(x, y, n_blocks)
+  File "/scratch/bqian/ochrodbProject/ldsc/ldscore/jackknife.py", line 309, in __init__
+    self.est = self.block_values_to_est(xty, xtx)
+  File "/scratch/bqian/ochrodbProject/ldsc/ldscore/jackknife.py", line 386, in block_values_to_est
+    return np.linalg.solve(xtx, xty).reshape((1, p))
+  File "/tmp/pip-unpacked-wheel-HA9Mx_/numpy/linalg/linalg.py", line 403, in solve
+  File "/tmp/pip-unpacked-wheel-HA9Mx_/numpy/linalg/linalg.py", line 97, in _raise_linalgerror_singular
+LinAlgError: Singular matrix
+
+Analysis finished at Sun Apr  3 12:51:49 2022
+Total time elapsed: 57.45s

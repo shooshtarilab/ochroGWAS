@@ -1,0 +1,45 @@
+*********************************************************************
+* LD Score Regression (LDSC)
+* Version 1.0.1
+* (C) 2014-2019 Brendan Bulik-Sullivan and Hilary Finucane
+* Broad Institute of MIT and Harvard / MIT Department of Mathematics
+* GNU General Public License v3
+*********************************************************************
+Call: 
+./ldsc.py \
+--h2-cts /home/bqian/projects/def-pshoosht/bqian/Rscripts/GWASscript/downloads/set19/secondRun/munge_fixed_Total_bilirubin_levels_GCST90018973.sumstats.gz \
+--ref-ld-chr /home/bqian/scratch/ochrodbProject/data/hg19/baseline/baselineLD. \
+--out ./atlasGWAS/munge_fixed_Total_bilirubin_levels_GCST90018973 \
+--ref-ld-chr-cts ./noRef.ldct \
+--w-ld-chr /home/bqian/scratch/ochrodbProject/data/hg19/weights_hm3_no_hla/weights. 
+
+Beginning analysis at Sun Apr  3 13:35:32 2022
+Reading summary statistics from /home/bqian/projects/def-pshoosht/bqian/Rscripts/GWASscript/downloads/set19/secondRun/munge_fixed_Total_bilirubin_levels_GCST90018973.sumstats.gz ...
+Read summary statistics for 14544869 SNPs.
+Reading reference panel LD Score from /home/bqian/scratch/ochrodbProject/data/hg19/baseline/baselineLD.[1-22] ... (ldscore_fromlist)
+Read reference panel LD Scores for 1190321 SNPs.
+Removing partitioned LD Scores with zero variance.
+Reading regression weight LD Score from /home/bqian/scratch/ochrodbProject/data/hg19/weights_hm3_no_hla/weights.[1-22] ... (ldscore_fromlist)
+Read regression weight LD Scores for 1242190 SNPs.
+After merging with reference panel LD, 1186595 SNPs remain.
+After merging with regression SNP LD, 1077054 SNPs remain.
+Removed 487 SNPs with chi^2 > 179.0 (1076567 SNPs remain)
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/liver/step2/Erythroblasts.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/liver/step2/Hematopoietic.stem.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/liver/step2/Hepatoblasts.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/liver/step2/Lymphoid.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/liver/step2/Megakaryocytes.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/liver/step2/Myeloid.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/liver/step2/Stellate.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Reading cts reference panel LD Score from ~/scratch/ochrodbProject/scATAC/data/liver/step2/Vascular.endothelial.cells.[1-22] ... (ldscore_fromlist)
+Performing regression.
+Results printed to ./atlasGWAS/munge_fixed_Total_bilirubin_levels_GCST90018973.cell_type_results.txt
+Analysis finished at Sun Apr  3 13:37:43 2022
+Total time elapsed: 2.0m:10.49s
