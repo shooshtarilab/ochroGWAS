@@ -51,7 +51,7 @@ Uses ldsc.py to calculate ldscores from annotation files. Inputs required are -b
 
 ### Step 3 &#8594; Step3_GWAS.sh
 
-Integrates the GWAS sumstats data with LDSC from previous step. One important requirement of this step is the generation of ".ldct" file. This file contains the information about the cell type and the location of their LD score files. It can be created manually as well. The format is in the following way: 
+Integrates the GWAS sumstats data with LDSC from previous step. One important requirement of this step is the generation of ".ldct" file. This file contains the information about the cell type and the location of their LD score files. *CreateLDCT.py* can be used for this purpose. It can be created manually as well. The format is in the following way: 
 
 >CellType1      ~/ldscores/CellType1.<br />
 >CellType2      ~/ldscores/CellType2.<br />
@@ -72,8 +72,8 @@ and so on for all cell types.
 
 ### Further Steps
 
-Final output from the above steps are text files containing p-values of association of all cell-types for each GWAS. Each file has the name of the GWAS used for integration and contains all the cell types in increasing order of p-values. These p-values shoudl be adjusted using Benjamini-Hoschberg correction with a FDR threshold of 0.05, and similar step should be done for all .  Once that has been done, heatmaps can be generated and visualisations can be done. T
+Final output from the above steps are text files containing p-values of association of all cell-types for each GWAS. Each file has the name of the GWAS used for integration and contains all the cell types in increasing order of p-values. These p-values shoudl be adjusted using Benjamini-Hoschberg correction with a FDR threshold of 0.05, and similar step should be done for all phenotypes. Once that has been done, the results can be concatenated, heatmaps can be generated and visualisations can be done.
 
 ## Visualisation
 
-Once all the p-values have been adjusted. The following R scripts can be run to visualise the analysis. 
+Once all the p-values have been adjusted. The R scripts in Visualisation can be run to visualise the analysis. 
