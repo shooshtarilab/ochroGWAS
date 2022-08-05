@@ -2,7 +2,7 @@
 This repository contains the pipeline for integration of GWAS and open chromatin regions (peaks) data using LDSC. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines creates a virtual enviornment for the job to run on with the versions of python and bedtools required by ldsc. Comments have been made to get a comprehensive understanding of various steps involved. hg38 has been used for all files. For more information regarding the working of the python scripts, please refer to https://github.com/bulik/ldsc/wiki
 
 The first step is Processing. All the relevant scripts are in the Processing folder.
-## Processing
+## 1. Processing
 ### Required files:
 <ol>
   <li> Simple BED files containing open chromatin region base-pair locations
@@ -74,7 +74,7 @@ and so on for all cell types.
 
 Final output from the above steps are text files containing p-values of association of all cell-types for each GWAS. Each file has the name of the GWAS used for integration and contains all the cell types in increasing order of p-values. These p-values shoudl be adjusted using Benjamini-Hoschberg correction with a FDR threshold of 0.05, and similar step should be done for all phenotypes. Once that has been done, the results can be concatenated, heatmaps can be generated and visualisations can be done.
 
-## Visualisation
+## 2. Visualisation
 
 Once all the p-values have been adjusted. The R scripts in Visualisation can be run to visualise the analysis. Plotting all phenotypes can be hectic, therefore to select only the ones that have atleast one cell-type associated with it with adjusted p-value less than equal to 0.05, *Choosing_Siginificant.py* can be used. 
 
@@ -86,14 +86,20 @@ Read the result csv file that has **all** the phenotypes and **all* the cell typ
 
 This script was used to create boxplots to visualise the cell types from the study of Zhang et. al. https://www.cell.com/cell/pdf/S0092-8674(21)01279-4.pdf 
 
-#### Heatmap_OCHRO.R
+### Heatmap_OCHRO.R
 
 Creates Heatmap for OCHROdb results. Renames all the columns. Comments have been made in the script to make it more readable.
 
-#### Heatmap_SC.R
+### Heatmap_SC.R
 
 Creates Heatmap for sing-cell data from Zhang et. al. Renames all the columns. Comments have been made in the script to make it more readable. 
 
-#### Heatmap_Categorywise.R
+### Heatmap_Categorywise.R
 
 This heatmap can be used in any of the categories in the *3. Categorical Results* folder. The uploaded script is aligned with the requirements of *1. Immune Cells* subfolder. It requires two csv files, one for adult cell types and the other for fetal cell types. The phenotypes should be same for the two and must be ones who have atleast one significant association in either fetal or adult. This script can also be used for all other subfolders, with a few modifications. Column names must be renamed accordingly and absence of either adult or fetal csv should be accounted for. 
+
+
+## 3. Categorical Results
+
+Contains results for all adult and fetal single-cell cell types, divided into 15 categories based on similarity and tissue composition.
+
