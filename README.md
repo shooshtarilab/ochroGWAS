@@ -78,22 +78,22 @@ Final output from the above steps are text files containing p-values of associat
 
 Once all the p-values have been adjusted. The R scripts in Visualisation can be run to visualise the analysis. Plotting all phenotypes can be hectic, therefore to select only the ones that have atleast one cell-type associated with it with adjusted p-value less than equal to 0.05, *Choosing_Siginificant.py* can be used. 
 
-###Choosing_Signigficant.py
+### Choosing_Signigficant.py
 
 Read the result csv file that has **all** the phenotypes and **all* the cell types. Selects only the phenotypes that have atleast one significant association and saves the dataframe in another csv file.
 
-###Boxplot_Peaks_and_Cells.R
+### Boxplot_Peaks_and_Cells.R
 
 This script was used to create boxplots to visualise the cell types from the study of Zhang et. al. https://www.cell.com/cell/pdf/S0092-8674(21)01279-4.pdf 
 
-####Heatmap_OCHRO.R
+#### Heatmap_OCHRO.R
 
 Creates Heatmap for OCHROdb results. Renames all the columns. Comments have been made in the script to make it more readable.
 
-####Heatmap_SC.R
+#### Heatmap_SC.R
 
 Creates Heatmap for sing-cell data from Zhang et. al. Renames all the columns. Comments have been made in the script to make it more readable. 
 
-####Heatmap_Categorywise.R
+#### Heatmap_Categorywise.R
 
 This heatmap can be used in any of the categories in the *3. Categorical Results* folder. The uploaded script is aligned with the requirements of *1. Immune Cells* subfolder. It requires two csv files, one for adult cell types and the other for fetal cell types. The phenotypes should be same for the two and must be ones who have atleast one significant association in either fetal or adult. This script can also be used for all other subfolders, with a few modifications. Column names must be renamed accordingly and absence of either adult or fetal csv should be accounted for. 
