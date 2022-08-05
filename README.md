@@ -26,7 +26,7 @@ Uses make_annot.py to make annotation files for all cell types (.bed files).
 --bimfile \<PLINK directory\>     &#8594; Contains information about the SNPs in each chromosome<br />
 
 ### Outputs:
---annot-file \<output directory\> &#8594; Directory to geenrate annotation files
+--annot-file \<output directory\> &#8594; Directory to generate annotation files
 
 ### Function:
 - Creates a binary annotation file representing SNP locations within open chromatin region for each chromosome of every cell type. SNPs are represented by 1s if present in open chromatin region, else zero. 
@@ -56,7 +56,7 @@ Integrates the GWAS sumstats data with LDSC from previous step. One important re
 
 and so on for all cell types.
 
-### Step 3 :
+### Inputs:
 --h2-cts \<SUMSTATS file\>          &#8594; SUMSTATs file of the phenotype to be analysed<br />
 --ref-ld-chr \<Baseline LD\>        &#8594; Baseline LD files for reference genome<br />
 --ref-ld-chr-cts \<ldct file\>      &#8594; LDCT file for reference (mentioned above)<br />
