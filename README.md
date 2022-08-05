@@ -1,5 +1,5 @@
 # EPI.Enrich
-Pipeline for automatic integration of open chromatin regions (peaks) and GWAS data.
+This repository contains the pipeline for integration of GWAS and open chromatin regions (peaks) data using LDSC. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines Comments have been made to get a comprehensive understanding of various steps involved. 
 
 # Bulk data
 
