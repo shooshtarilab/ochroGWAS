@@ -1,7 +1,9 @@
 # EPI.Enrich
 This repository contains the pipeline for integration of GWAS and open chromatin regions (peaks) data using LDSC. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines Comments have been made to get a comprehensive understanding of various steps involved. hg38 has been used for all files. For more information regarding the working of the python scripts, please refer to https://github.com/bulik/ldsc/wiki
 
-## Required files:
+The first step is Processing. All the relevant scripts are in the Processing folder.
+## Processing
+### Required files:
 <ol>
   <li> Simple BED files containing open chromatin region base-pair locations
     <ol>
@@ -17,37 +19,37 @@ This repository contains the pipeline for integration of GWAS and open chromatin
 </ol>
 
 
-## Step 1 &#8594; Step1_Annotations.sh
+### Step 1 &#8594; Step1_Annotations.sh
 
 Uses make_annot.py to make annotation files for all cell types (.bed files).
 
-### Inputs: 
+#### Inputs: 
 --bed-file \<bedfiles directory\> &#8594; Containing peaks of cell types,<br />
 --bimfile \<PLINK directory\>     &#8594; Contains information about the SNPs in each chromosome<br />
 
-### Outputs:
+#### Outputs:
 --annot-file \<output directory\> &#8594; Directory to generate annotation files
 
-### Function:
+#### Function:
 - Creates a binary annotation file representing SNP locations within open chromatin region for each chromosome of every cell type. SNPs are represented by 1s if present in open chromatin region, else zero. 
 
-## Step 2 &#8594; Step2_LDSC.sh
+### Step 2 &#8594; Step2_LDSC.sh
 
 Uses ldsc.py to calculate ldscores from annotation files. Inputs required are -bfiles (.bed,.bim,.fam files of PLINK)
 
-### Inputs:
+#### Inputs:
 --bfile \<PLINK directory\>               &#8594; PLINK directory<br />
 --annot \<annotation directory\>          &#8594; Annotation directory<br />
 --print-snps \<hapmap3 SNPs directory\>   &#8594; Hapmap3 SNP directory<br />
 
-### Outputs:
+#### Outputs:
 --out \<output directory\>
 
-### Function:
+#### Function:
 - Runs LDSC regression to generate LD files for each of the listed cell types. 
 
 
-## Step 3 &#8594; Step3_GWAS.sh
+### Step 3 &#8594; Step3_GWAS.sh
 
 Integrates the GWAS sumstats data with LDSC from previous step. One important requirement of this step is the generation of ".ldct" file. This file contains the information about the cell type and the location of their LD score files. It can be created manually as well. The format is in the following way: 
 
@@ -56,18 +58,22 @@ Integrates the GWAS sumstats data with LDSC from previous step. One important re
 
 and so on for all cell types.
 
-### Inputs:
+#### Inputs:
 --h2-cts \<SUMSTATS file\>          &#8594; SUMSTATs file of the phenotype to be analysed<br />
 --ref-ld-chr \<Baseline LD\>        &#8594; Baseline LD files for reference genome<br />
 --ref-ld-chr-cts \<ldct file\>      &#8594; LDCT file for reference (mentioned above)<br />
 --w-ld-chr  \<No HLA weights\>      &#8594; No HLA weights for Hapmap3 directory<br />
 
-### Outputs:
+#### Outputs:
 --out \<Output directory\>          &#8594; Directory to output files
 
-### Function:
+#### Function:
 - Integrates GWAS with previously generated files and outputs p-values. 
 
-## Further Steps
+### Further Steps
 
 The next step is to adjust p-values using Benjamini-Hoschberg correction with a threshold of 0.05. Once that has been done, heatmaps can be generated and visualisations can be done. 
+
+## Visualisation
+
+Once all the p-values have been adjusted. The following R scripts can be run to visualise the analysis. 
