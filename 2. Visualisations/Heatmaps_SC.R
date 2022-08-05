@@ -6,8 +6,8 @@ library(RColorBrewer)
 ht_opt$TITLE_PADDING = unit(c(4.5, 4.5), "points")
 
 #Single-Cell Data with Rows manually Sorted 
-adult <- read.table("Master_Heatmap_2.csv", sep=',', header=TRUE, row.names = 1)
-d1 <- data.matrix(adult, rownames.force = TRUE)
+sc <- read.table("Master_Heatmap_2.csv", sep=',', header=TRUE, row.names = 1)
+d1 <- data.matrix(sc, rownames.force = TRUE)
 
 #Renaming Columns
 
