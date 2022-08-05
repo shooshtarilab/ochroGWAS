@@ -17,7 +17,7 @@ This repository contains the pipeline for integration of GWAS and open chromatin
 </ol>
 
 
-## Step 1 --> Step1_Annotations.sh
+## Step 1 &#8594; Step1_Annotations.sh
 
 Uses make_annot.py to make annotation files for all cell types (.bed files).
 
