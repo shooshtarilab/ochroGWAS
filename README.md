@@ -51,8 +51,8 @@ Uses ldsc.py to calculate ldscores from annotation files. Inputs required are -b
 
 Integrates the GWAS sumstats data with LDSC from previous step. One important requirement of this step is the generation of ".ldct" file. This file contains the information about the cell type and the location of their LD score files. It can be created manually as well. The format is in the following way: 
 
->CellType1 ~/ldscores/CellType1.
->CellType2 ~/ldscores/CellType2.
+>CellType1      ~/ldscores/CellType1. \n
+>CellType2      ~/ldscores/CellType2.
 
 and so on for all cell types.
 
