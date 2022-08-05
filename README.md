@@ -22,8 +22,8 @@ This repository contains the pipeline for integration of GWAS and open chromatin
 Uses make_annot.py to make annotation files for all cell types (.bed files).
 
 ### Inputs: 
---bed-file \<bedfiles directory\> &#8594; Containing peaks of cell types,
---bimfile \<PLINK directory\>     &#8594; Contains information about the SNPs in each chromosome
+--bed-file \<bedfiles directory\> &#8594; Containing peaks of cell types,<br />
+--bimfile \<PLINK directory\>     &#8594; Contains information about the SNPs in each chromosome<br />
 
 ### Outputs:
 --annot-file \<output directory\> &#8594; Directory to geenrate annotation files
@@ -36,9 +36,9 @@ Uses make_annot.py to make annotation files for all cell types (.bed files).
 Uses ldsc.py to calculate ldscores from annotation files. Inputs required are -bfiles (.bed,.bim,.fam files of PLINK)
 
 ### Inputs:
---bfile \<PLINK directory\>               &#8594; PLINK directory
---annot \<annotation directory\>          &#8594; Annotation directory
---print-snps \<hapmap3 SNPs directory\>   &#8594; Hapmap3 SNP directory
+--bfile \<PLINK directory\>               &#8594; PLINK directory<br />
+--annot \<annotation directory\>          &#8594; Annotation directory<br />
+--print-snps \<hapmap3 SNPs directory\>   &#8594; Hapmap3 SNP directory<br />
 
 ### Outputs:
 --out \<output directory\>
@@ -51,16 +51,16 @@ Uses ldsc.py to calculate ldscores from annotation files. Inputs required are -b
 
 Integrates the GWAS sumstats data with LDSC from previous step. One important requirement of this step is the generation of ".ldct" file. This file contains the information about the cell type and the location of their LD score files. It can be created manually as well. The format is in the following way: 
 
->CellType1      ~/ldscores/CellType1. \n
->CellType2      ~/ldscores/CellType2.
+>CellType1      ~/ldscores/CellType1.<br />
+>CellType2      ~/ldscores/CellType2.<br />
 
 and so on for all cell types.
 
 ### Step 3 :
---h2-cts \<SUMSTATS file\>          &#8594; SUMSTATs file of the phenotype to be analysed
---ref-ld-chr \<Baseline LD\>        &#8594; Baseline LD files for reference genome
---ref-ld-chr-cts \<ldct file\>      &#8594; LDCT file for reference (mentioned above)
---w-ld-chr  \<No HLA weights\>      &#8594; No HLA weights for Hapmap3 directory
+--h2-cts \<SUMSTATS file\>          &#8594; SUMSTATs file of the phenotype to be analysed<br />
+--ref-ld-chr \<Baseline LD\>        &#8594; Baseline LD files for reference genome<br />
+--ref-ld-chr-cts \<ldct file\>      &#8594; LDCT file for reference (mentioned above)<br />
+--w-ld-chr  \<No HLA weights\>      &#8594; No HLA weights for Hapmap3 directory<br />
 
 ### Outputs:
 --out \<Output directory\>          &#8594; Directory to output files
