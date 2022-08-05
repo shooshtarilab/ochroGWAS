@@ -1,5 +1,5 @@
 # EPI.Enrich
-This repository contains the pipeline for integration of GWAS and open chromatin regions (peaks) data using LDSC. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines Comments have been made to get a comprehensive understanding of various steps involved. hg38 has been used for all files. For more information regarding the working of the python scripts, please refer to https://github.com/bulik/ldsc/wiki
+This repository contains the pipeline for integration of GWAS and open chromatin regions (peaks) data using LDSC. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines creates a virtual enviornment for the job to run on with the versions of python and bedtools required by ldsc. Comments have been made to get a comprehensive understanding of various steps involved. hg38 has been used for all files. For more information regarding the working of the python scripts, please refer to https://github.com/bulik/ldsc/wiki
 
 The first step is Processing. All the relevant scripts are in the Processing folder.
 ## Processing
@@ -72,7 +72,7 @@ and so on for all cell types.
 
 ### Further Steps
 
-The next step is to adjust p-values using Benjamini-Hoschberg correction with a threshold of 0.05. Once that has been done, heatmaps can be generated and visualisations can be done. 
+Final output from the above steps are text files containing p-values of association of all cell-types for each GWAS. Each file has the name of the GWAS used for integration and contains all the cell types in increasing order of p-values. These p-values shoudl be adjusted using Benjamini-Hoschberg correction with a FDR threshold of 0.05, and similar step should be done for all .  Once that has been done, heatmaps can be generated and visualisations can be done. T
 
 ## Visualisation
 
