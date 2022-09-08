@@ -85,11 +85,11 @@ Final output from the above steps are text files containing p-values of associat
 
 ## 2. Visualisation
 
-Once all the p-values have been adjusted. The R scripts in this folder can be run to visualise the analysis. Plotting all phenotypes can be hectic, therefore to select only the ones that have at least one cell-type associated with it with adjusted p-value less than equal to 0.05, *Choosing_Siginificant.py* can be used. 
+The R scripts in this folder can be run to visualise the analysis. Plotting all phenotypes can be hectic, therefore to select only the ones that have at least one significant (adjusted p-value less than equal to 0.05) cell-type associated with them. 
 
 ### Choosing_Signigficant.py
 
-Read the result csv file that has **all** the phenotypes and **all* the cell types. Selects only the phenotypes that have atleast one significant association and saves the dataframe in another csv file.
+Read the result csv file that has **all** the phenotypes and **all* the cell types. Selects only the phenotypes that have at least one significant association and saves the dataframe in another csv file.
 
 ### Boxplot_Peaks_and_Cells.R
 
