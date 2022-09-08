@@ -1,5 +1,14 @@
 # OCR-GWAS
-This repository contains the pipeline for integration of GWAS and open chromatin regions (peaks) data using LDSC. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines creates a virtual enviornment for the job to run on with the versions of python and bedtools required by ldsc. Comments have been made to get a comprehensive understanding of various steps involved. hg38 has been used for all files. For more information regarding the working of the python scripts, please refer to https://github.com/bulik/ldsc/wiki
+This page contains data related to the following paper:
+### Title:
+Single-cell chromatin accessibility data combined with GWAS improves detection of relevant cell types in 59 complex phenotypes
+### Authors:
+Akash Chandra Das (akashchandra@iitg.ac.in), Aidin Foroutan (aidin.foroutan@lhsc.on.ca), Brian Qian (bqian7@uwo.ca), Nader Hosseini Naghavi (nhosse2@uwo.ca), Kayvan Shabani (kshaban2@uwo.ca), Parisa Shooshtari (pshoosh@uwo.ca)
+
+##
+This repository contains the pipeline for integration of GWAS and open chromatin regions (peaks) data using LDSC. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines creates a virtual enviornment for the job to run on with the versions of python and bedtools required by ldsc. Comments have been made to get a comprehensive understanding of various steps involved. hg38 has been used for all files. For more information regarding the working of the python scripts, please refer to https://github.com/bulik/ldsc/wiki. 
+
+For all the following steps, we have used bulk-sequencing dataset (https://www.biorxiv.org/content/10.1101/484840v1) and single-cell ATAC sequencing dataset (https://www.cell.com/cell/fulltext/S0092-8674(21)01279-4) and integrated them with GWAS (https://www.nature.com/articles/s41588-021-00931-x). The relevant peak files and .sumstats files required for the following steps need to be downloaded from above mentioned resources.
 
 The first step is Processing. All the relevant scripts are in the Processing folder.
 ## 1. Processing
@@ -84,15 +93,15 @@ Read the result csv file that has **all** the phenotypes and **all* the cell typ
 
 ### Boxplot_Peaks_and_Cells.R
 
-This script was used to create boxplots to visualise the cell types from the study of Zhang et. al. https://www.cell.com/cell/pdf/S0092-8674(21)01279-4.pdf 
+This script was used to create boxplots to visualise the cell types from the study of Zhang et. al. https://www.cell.com/cell/pdf/S0092-8674(21)01279-4.pdf. The relevant csv files that are used in this script are: Cell_Count.csv, Peaks_Count.csv
 
 ### Heatmap_OCHRO.R
 
-Creates Heatmap for OCHROdb results. Renames all the columns. Comments have been made in the script to make it more readable.
+Creates Heatmap for OCHROdb results. Renames all the columns. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: OCHROdb.csv
 
 ### Heatmap_SC.R
 
-Creates Heatmap for sing-cell data from Zhang et. al. Renames all the columns. Comments have been made in the script to make it more readable. 
+Creates Heatmap for sing-cell data from Zhang et. al. Renames all the columns. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: scATAC.csv
 
 ### Heatmap_Categorywise.R
 
@@ -101,5 +110,5 @@ This heatmap can be used in any of the categories in the *3. Categorical Results
 
 ## 3. Categorical Results
 
-Contains results for all adult and fetal single-cell cell types, divided into 15 categories based on similarity and tissue composition.
+Contains results for all adult and fetal single-cell cell types, divided into 15 categories based on similarity and tissue composition. Scripts from 2. Visualisation can be used to generate the figures for these datasets.
 
