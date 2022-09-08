@@ -1,0 +1,223 @@
+﻿Cell,Name,Nuclei Count
+Immune Cells,FetalBLymphocyte2CXCR5+,1529
+Immune Cells,FetalBLymphocyte1SPIB+,2495
+Immune Cells,FetalTLymphocyte2Cytotoxic,2260
+Immune Cells,FetalTLymphocyte3IL2+,1447
+Immune Cells,NaiveT,1162
+Immune Cells,PlasmaB,3351
+Immune Cells,Mast,2668
+Immune Cells,Microglia,1403
+Immune Cells,FetalTLymphocyte1CD4+,5794
+Immune Cells,MacrophageGenOrAlv,23888
+Immune Cells,MacrophageGeneral,28157
+Immune Cells,MemoryB,1158
+Immune Cells,NaturalKillerT,1696
+Immune Cells,TLymphocyte1CD8,17749
+Immune Cells,TLymphocyte2CD4,2341
+Immune Cells,FetalHemtopoeticStem,1562
+Immune Cells,FetalTLymphocyte4FASLG+,553
+Immune Cells,FetalBLymphocyte3NPY+,851
+Immune Cells,FetalMacrophageGeneral1,2287
+Immune Cells,FetalMacrophageGeneral2,1739
+Immune Cells,FetalMacrophageGeneral3,1390
+Immune Cells,FetalMacrophageGeneral4,1050
+Immune Cells,FetalMacrophagePlacental,3254
+Immune Cells,FetalMacrophageHepatic1,3169
+Immune Cells,FetalMacrophageHepatic2,1347
+Immune Cells,FetalMegakaryocyte,1701
+Immune Cells,FetalThympcyte,23478
+Endothelial Cells,BBBEndothelial,228
+Endothelial Cells,Lymphatic,3487
+Endothelial Cells,EndothelialExocrine,368
+Endothelial Cells,EndothelialGenera1,24007
+Endothelial Cells,EndothelialGenera2,2740
+Endothelial Cells,EndothelialGenera3,957
+Endothelial Cells,Endocardial,865
+Endothelial Cells,AlveolarCapEndo,1717
+Endothelial Cells,EndothelialMyocardial,6653
+Endothelial Cells,FetalEndothelialPlacental,953
+Endothelial Cells,FetalLymphatic,1302
+Endothelial Cells,FetalAlveolarCapEndo,1978
+Endothelial Cells,FetalEndothelialHepatic1,5161
+Endothelial Cells,FetalEndothelialHepatic2,1547
+Endothelial Cells,FetalEndocardial,1985
+Endothelial Cells,FetalEndothelialGeneral1,6043
+Endothelial Cells,FetalEndothelialGeneral2,3984
+Erythroids,FetalErythroblast1,60166
+Erythroids,FetalErythroblast2,35290
+Erythroids,FetalErythroblast3,25117
+Erythroids,Feta+B47lErythroblast4,2846
+Erythroids,FetalErythroblast5,1399
+Cardiomyocytes,ACardiomyocyte,12397
+Cardiomyocytes,VCardiomyocyte,29250
+Cardiomyocytes,FetalACardiomyocyte,4203
+Cardiomyocytes,FetalVCardiomyocyte,40840
+Stromal Cells,CardiacPericyte1,4302
+Stromal Cells,CardiacPericyte2,1309
+Stromal Cells,CardiacPericyte3,736
+Stromal Cells,CardiacPericyte4,642
+Stromal Cells,PericyteGeneral1,3509
+Stromal Cells,PericyteGeneral2,2353
+Stromal Cells,PericyteGeneral3,2346
+Stromal Cells,PericyteGeneral4,853
+Stromal Cells,PericyteMuscularis,868
+Stromal Cells,FibroLiverAdrenal,709
+Stromal Cells,VascSmMuscle1,28372
+Stromal Cells,VascSmMuscle2,6400
+Stromal Cells,FetalStellate,1477
+Stromal Cells,FetalFibroGeneral1,48591
+Stromal Cells,FetalFibroGeneral2,4415
+Stromal Cells,FetalFibroGeneral3,3121
+Stromal Cells,FetalFibroGeneral4,786
+Stromal Cells,FetalFibroGeneral5,382
+Stromal Cells,FetalMesangial1,8814
+Stromal Cells,FetalMesangial2,2831
+Stromal Cells,FetalFibroSplenic,1165
+Stromal Cells,FetalFibroMuscle1,4064
+Stromal Cells,FetalFibroGI,8808
+Stromal Cells,FetalFibroPlacental1,6003
+Stromal Cells,FetalEndothelialGeneral3,783
+Stromal Cells,FetalCardiacFibroblast,6894
+Adult Stromal Cells,SmMsColon1,7160
+Adult Stromal Cells,SmMsColon2,3114
+Adult Stromal Cells,SmMsGEJunction,3451
+Adult Stromal Cells,SmMsGI,1156
+Adult Stromal Cells,SmMsGeneral,4205
+Adult Stromal Cells,SmMsMucosal,445
+Adult Stromal Cells,SmMsMuscularis1,8008
+Adult Stromal Cells,SmMsMuscularis2,4464
+Adult Stromal Cells,SmMsMuscularis3,1365
+Adult Stromal Cells,SmMsUterine,4321
+Adult Stromal Cells,SmMsVaginal,884
+Adult Stromal Cells,Mesothelial,3392
+Adult Stromal Cells,Adipocyte,4065
+Adult Stromal Cells,Satellite,868
+Adult Stromal Cells,Luteal,6289
+Adult Stromal Cells,NerveStromal,1694
+Adult Stromal Cells,FibroMuscle,2112
+Adult Stromal Cells,FibroGI,4849
+Adult Stromal Cells,FibroNerve,3316
+Adult Stromal Cells,FibroEpithelial,7178
+Adult Stromal Cells,FibroGeneral,52868
+Adult Stromal Cells,CardiacFibroblast,33106
+Skeletal Myocytes,TypeIISkeletalMyocyte,10524
+Skeletal Myocytes,TypeISkeletalMyocyte,26174
+Skeletal Myocytes,FetalSkeletalMyocyte1,12469
+Skeletal Myocytes,FetalSkeletalMyocyte2,551
+Skeletal Myocytes,FetalSkeletalMyocyte3,535
+Skeletal Myocytes,FetalSatellite1,1970
+Skeletal Myocytes,FetalSatellite2,736
+Follicular and Placental,Follicular,25346
+Follicular and Placental,FetalExtravillousTrophoblast,460
+Follicular and Placental,FetalSyncitio+Cytotrophoblast,3310
+Epithelial,AlveolarType1,2780
+Epithelial,AlveolarType2,5193
+Epithelial,AlveolarType2Immune,1726
+Epithelial,Keratinocyte1,6361
+Epithelial,Keratinocyte2,548
+Epithelial,SkinBasalEpidermal,438
+Epithelial,EsophagealEpithelial,16758
+Epithelial,Myoepithelial,600
+Epithelial,MammaryEpithelial,5520
+Epithelial,SkinEccrineEpidermal,776
+Epithelial,SkinGranularEpidermal,1622
+Epithelial,MammaryLuminalEpi1,3830
+Epithelial,MammaryLuminalEpi2,1368
+Epithelial,Cilliated,384
+Epithelial,Club,709
+Epithelial,MammaryBasalEpi,3765
+Epithelial,Acinar,24703
+Epithelial,AirGoblet,542
+Epithelial,Ductal,2762
+Epithelial,FetalAlveolarEpithelial1,31681
+Epithelial,FetalAlveolarEpithelial2,134
+Epithelial,FetalMesothelial,461
+Epithelial,FetalAcinar1,1130
+Epithelial,FetalAcinar2,798
+Epithelial,FetalCholangiocyte,597
+Epithelial,FetalCilliated,4464
+Epithelial,FetalDuctal,490
+Epithelial,FetalUretericBud,6269
+Gastric and GI Epithelial,Tuft,305
+Gastric and GI Epithelial,Enterochromaffin,371
+Gastric and GI Epithelial,Enterocyte,8103
+Gastric and GI Epithelial,Paneth,279
+Gastric and GI Epithelial,ColonEpithelial1,16784
+Gastric and GI Epithelial,ColonEpithelial2,1085
+Gastric and GI Epithelial,ColonEpithelial3,649
+Gastric and GI Epithelial,ColonGoblet,3028
+Gastric and GI Epithelial,SIGoblet,2053
+Gastric and GI Epithelial,Foveolar,910
+Gastric and GI Epithelial,Chief,8599
+Gastric and GI Epithelial,Parietal,2294
+Gastric and GI Epithelial,FetalParietal+Chief,279
+Gastric and GI Epithelial,FetalEnterocyte1,10283
+Gastric and GI Epithelial,FetalEnterocyte2,4632
+Gastric and GI Epithelial,FetalEnterocyte3,3332
+Gastric and GI Epithelial,FetalEnteroendocrine,301
+Gastric and GI Epithelial,FetalGastriGoblet,1291
+Gastric and GI Epithelial,FetalGoblet,670
+Islets and Neuroendocrine,Alpha1,5046
+Islets and Neuroendocrine,Alpha2,1179
+Islets and Neuroendocrine,Beta1,5323
+Islets and Neuroendocrine,Beta2,2007
+Islets and Neuroendocrine,Delta+Gamma,1279
+Islets and Neuroendocrine,FetalPulmonaryNeuroendocrine,382
+Islets and Neuroendocrine,FetalIslet,346
+Islets and Neuroendocrine,GastricNeuroendocrine,909
+Fetal Neural Cells,FetalExcitatoryNeuron1,33928
+Fetal Neural Cells,FetalExcitatoryNeuron10,2490
+Fetal Neural Cells,FetalExcitatoryNeuron11,514
+Fetal Neural Cells,FetalExcitatoryNeuron12,334
+Fetal Neural Cells,FetalExcitatoryNeuron2,1159
+Fetal Neural Cells,FetalExcitatoryNeuron3,10521
+Fetal Neural Cells,FetalExcitatoryNeuron4,8264
+Fetal Neural Cells,FetalExcitatoryNeuron5,3737
+Fetal Neural Cells,FetalExcitatoryNeuron6,2862
+Fetal Neural Cells,FetalExcitatoryNeuron7,1782
+Fetal Neural Cells,FetalExcitatoryNeuron8,1124
+Fetal Neural Cells,FetalExcitatoryNeuron9,8472
+Fetal Neural Cells,FetalInhibitoryNeuron1,15284
+Fetal Neural Cells,FetalInhibitoryNeuron2,873
+Fetal Neural Cells,FetalInhibitoryNeuron3,450
+Fetal Neural Cells,FetalInhibitoryNeuron4,256
+Fetal Neural Cells,FetalInhibitoryNeuron5,420
+Fetal Neural Cells,FetalAstrocyte1,8897
+Fetal Neural Cells,FetalAstrocyte2,1907
+Fetal Neural Cells,FetalAstrocyte3,1818
+Fetal Neural Cells,FetalAstrocyte4,1539
+Fetal Neural Cells,FetalAstrocyte5,232
+Fetal Neural Cells,FetalFibroPlacental2,243
+Fetal Neural Cells,FetalPlacentalNeuron,1048
+Fetal Neural Cells,FetalOligoProgenitor2,407
+Neural Cells,Astrocyte1,865
+Neural Cells,Astrocyte2,416
+Neural Cells,EntericNeuron,306
+Neural Cells,GABA1,1571
+Neural Cells,GABA2,1516
+Neural Cells,OligoPrecursor,1493
+Neural Cells,Oligodendrocyte,1972
+Neural Cells,SchwannGeneral,9661
+Neural Cells,Melanocyte,1299
+Neural Cells,Glutamatergic1,2733
+Neural Cells,Glutamatergic2,2171
+Neural Cells,FetalRetinalNeuron,1952
+Neural Cells,FetalRetinalPigment,453
+Neural Cells,FetalRetinalProgenitor1,4540
+Neural Cells,FetalRetinalProgenitor2,603
+Neural Cells,FetalMetanephric,34073
+Neural Cells,FetalPhotoreceptor,1849
+Neural Cells,FetalChromaffin,2910
+Neural Cells,FetalSchwannGeneral,767
+Neural Cells,FetalSympathoblast,470
+Neural Cells,FetalEntericGlial,883
+Neural Cells,FetalEntericNeuron,1875
+Adrenal Cortical,CorticalEpithelial,728
+Adrenal Cortical,Fasciculata,1223
+Adrenal Cortical,Glomerulosa,1117
+Adrenal Cortical,TransitionalCortical,3622
+Adrenal Cortical,FetalAdrenalCortical,60733
+Adrenal Cortical,FetalAdrenalNeuron,2455
+Hepatocyte,FetalHepatoblast,49385
+Hepatocyte,FetalMacrophageHepatic3,1109
+Hepatocyte,Hepatocyte,5722
