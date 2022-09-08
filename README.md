@@ -1,16 +1,16 @@
-# OCR-GWAS
+# ochroGWAS
 This page contains data related to the following paper:
 ### Title:
 Single-cell chromatin accessibility data combined with GWAS improves detection of relevant cell types in 59 complex phenotypes
 ### Authors:
-Akash Chandra Das (akashchandra@iitg.ac.in), Aidin Foroutan (aidin.foroutan@gmail.com), Brian Qian (bqian7@uwo.ca), Nader Hosseini Naghavi (nhosse2@uwo.ca), Kayvan Shabani (kshaban2@uwo.ca), Parisa Shooshtari (pshoosh@uwo.ca)
+Akash Chandra Das (akashchandra@iitg.ac.in), Aidin Foroutan (aidin.foroutan@uwo.ca), Brian Qian (bqian7@uwo.ca), Nader Hosseini Naghavi (nhosse2@uwo.ca), Kayvan Shabani (kshaban2@uwo.ca), Parisa Shooshtari (pshoosh@uwo.ca)
 
 ##
-This repository contains the pipeline for integration of GWAS and open chromatin regions (peaks) data using LDSC. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines creates a virtual enviornment for the job to run on with the versions of python and bedtools required by ldsc. Comments have been made to get a comprehensive understanding of various steps involved. hg38 has been used for all files. For more information regarding the working of the python scripts, please refer to https://github.com/bulik/ldsc/wiki. 
+This repository contains the pipeline for integration of genome-wide association studies (GWAS) data and open chromatin regions (peaks) data using linkage disequilibrium score (LDSC) regression. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines creates a virtual enviornment for the job to run on with the versions of python and bedtools required by ldsc. Comments have been made to get a comprehensive understanding of various steps involved. hg38 has been used for all files. For more information regarding the working of the python scripts, please refer to https://github.com/bulik/ldsc/wiki. 
 
-For all the following steps, we have used bulk-sequencing dataset (https://www.biorxiv.org/content/10.1101/484840v1) and single-cell ATAC sequencing dataset (https://www.cell.com/cell/fulltext/S0092-8674(21)01279-4) and integrated them with GWAS (https://www.nature.com/articles/s41588-021-00931-x). The relevant peak files and .sumstats files required for the following steps need to be downloaded from above mentioned resources.
+For all the following steps, we have used bulk-sequencing dataset (https://dhs.ccm.sickkids.ca/) and single-cell ATAC sequencing dataset (https://www.cell.com/cell/fulltext/S0092-8674(21)01279-4) and integrated them with GWAS (https://www.nature.com/articles/s41588-021-00931-x). The relevant peak files and ".sumstats" files required for the following steps need to be downloaded from above mentioned resources.
 
-The first step is Processing. All the relevant scripts are in the Processing folder.
+
 ## 1. Processing
 ### Required files:
 <ol>
@@ -85,7 +85,7 @@ Final output from the above steps are text files containing p-values of associat
 
 ## 2. Visualisation
 
-Once all the p-values have been adjusted. The R scripts in Visualisation can be run to visualise the analysis. Plotting all phenotypes can be hectic, therefore to select only the ones that have atleast one cell-type associated with it with adjusted p-value less than equal to 0.05, *Choosing_Siginificant.py* can be used. 
+Once all the p-values have been adjusted. The R scripts in this folder can be run to visualise the analysis. Plotting all phenotypes can be hectic, therefore to select only the ones that have at least one cell-type associated with it with adjusted p-value less than equal to 0.05, *Choosing_Siginificant.py* can be used. 
 
 ### Choosing_Signigficant.py
 
@@ -110,5 +110,8 @@ This heatmap can be used in any of the categories in the *3. Categorical Results
 
 ## 3. Categorical Results
 
-Contains results for all adult and fetal single-cell cell types, divided into 15 categories based on similarity and tissue composition. Scripts from 2. Visualisation can be used to generate the figures for these datasets.
+This folder contains results for all adult and fetal single-cell cell types, divided into 15 categories based on similarity and tissue composition. Scripts from "2. Visualisation" folder can be used to generate the figures for these datasets.
 
+
+## 4. Figures
+This folder contains all the figures generated in this projetc.
