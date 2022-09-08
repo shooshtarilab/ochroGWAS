@@ -1,4 +1,4 @@
-# EPI.Enrich
+# OCR-GWAS
 This repository contains the pipeline for integration of GWAS and open chromatin regions (peaks) data using LDSC. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines creates a virtual enviornment for the job to run on with the versions of python and bedtools required by ldsc. Comments have been made to get a comprehensive understanding of various steps involved. hg38 has been used for all files. For more information regarding the working of the python scripts, please refer to https://github.com/bulik/ldsc/wiki
 
 The first step is Processing. All the relevant scripts are in the Processing folder.
