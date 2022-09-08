@@ -3,7 +3,7 @@ This page contains data related to the following paper:
 ### Title:
 Single-cell chromatin accessibility data combined with GWAS improves detection of relevant cell types in 59 complex phenotypes
 ### Authors:
-Akash Chandra Das (akashchandra@iitg.ac.in), Aidin Foroutan (aidin.foroutan@lhsc.on.ca), Brian Qian (bqian7@uwo.ca), Nader Hosseini Naghavi (nhosse2@uwo.ca), Kayvan Shabani (kshaban2@uwo.ca), Parisa Shooshtari (pshoosh@uwo.ca)
+Akash Chandra Das (akashchandra@iitg.ac.in), Aidin Foroutan (aidin.foroutan@gmail.com), Brian Qian (bqian7@uwo.ca), Nader Hosseini Naghavi (nhosse2@uwo.ca), Kayvan Shabani (kshaban2@uwo.ca), Parisa Shooshtari (pshoosh@uwo.ca)
 
 ##
 This repository contains the pipeline for integration of GWAS and open chromatin regions (peaks) data using LDSC. The following procedures require high performance computing which has been done in this project using Compute Canada. All bash scripts are therefore customed to run on compute canada clusters. The first 4 lines of any bash script contains information for the cluster to allocate optimised resources to the job, while the next three lines creates a virtual enviornment for the job to run on with the versions of python and bedtools required by ldsc. Comments have been made to get a comprehensive understanding of various steps involved. hg38 has been used for all files. For more information regarding the working of the python scripts, please refer to https://github.com/bulik/ldsc/wiki. 
