@@ -12,10 +12,9 @@ Islet and Neuroendocrine cells heatmap
 Stromal cells heatmap
 #### Figure 6:   
 Endothelial cells heatmap
-#### Figure 7A:  
-Number of peaks per category of cell type
-#### Figure 7B:  
-Number of cells per category of cell type
+#### Figure 7:  
+A: Number of peaks per category of cell type 
+B: Number of cells per category of cell type
 #### Figure S1:  
 Erythroids heatmap
 #### Figure S2:  
