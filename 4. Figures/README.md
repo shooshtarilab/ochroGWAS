@@ -13,7 +13,7 @@ Stromal cells heatmap
 #### Figure 6:   
 Endothelial cells heatmap
 #### Figure 7:  
-A: Number of peaks per category of cell type 
+A: Number of peaks per category of cell type<br/>
 B: Number of cells per category of cell type
 #### Figure S1:  
 Erythroids heatmap
