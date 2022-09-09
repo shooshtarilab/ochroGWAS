@@ -1,40 +1,40 @@
 ## Titles for figures
 
-###### Figure 1:   
+#### Figure 1:   
 OCHROdb heatmap
-###### Figure 2:   
+#### Figure 2:   
 scATAC heatmap
-###### Figure 3:   
+#### Figure 3:   
 Immune cells heatmap
-###### Figure 4:   
+#### Figure 4:   
 Islet and Neuroendocrine cells heatmap
-###### Figure 5:   
+#### Figure 5:   
 Stromal cells heatmap
-###### Figure 6:   
+#### Figure 6:   
 Endothelial cells heatmap
-###### Figure 7A:  
+#### Figure 7A:  
 Number of peaks per category of cell type
-###### Figure 7B:  
+#### Figure 7B:  
 Number of cells per category of cell type
-###### Figure S1:  
+#### Figure S1:  
 Erythroids heatmap
-###### Figure S2:  
+#### Figure S2:  
 Cardiomyocytes heatmap
-###### Figure S3:  
+#### Figure S3:  
 Adult Stromal cells heatmap
-###### Figure S4:  
+#### Figure S4:  
 Skeletal Myocytes heatmap
-###### Figure S5:  
+#### Figure S5:  
 Follicular and Placental cells heatmap
-###### Figure S6:  
+#### Figure S6:  
 Epithelial cells heatmap
-###### Figure S7:  
+#### Figure S7:  
 Gastric and Gastro-Intestinal Epithelial cells heatmap
-###### Figure S8:  
+#### Figure S8:  
 Fetal Neural cells heatmap
-###### Figure S9:  
+#### Figure S9:  
 Neural cells heatmap
-###### Figure S10: 
+#### Figure S10: 
 Adrenal Cortical cells heatmap
-###### Figure S11: 
+#### Figure S11: 
 Hepatocytes heatmap
