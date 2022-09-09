@@ -87,7 +87,7 @@ The final outputs from the above steps are text files containing p-values of ass
 
 The R scripts in this folder can be run to visualise the analysis. Plotting all phenotypes can be hectic, therefore select only the ones that have at least one significant (adjusted p-value less than equal to 0.05) cell-type associated with them. This can be done using Choosing_Significant.py mentioned below. 
 
-### Choosing_Signigficant.py
+### Choosing_Significant.py
 
 Read the result CSV file that has **all** the phenotypes and **all** the cell types. Selects only the phenotypes that have at least one significant association and saves the dataframe in another CSV file.
 
@@ -95,17 +95,17 @@ Read the result CSV file that has **all** the phenotypes and **all** the cell ty
 
 This script was used to create boxplots to visualise the cell types from the study of Zhang et. al. https://www.cell.com/cell/pdf/S0092-8674(21)01279-4.pdf. The relevant csv files that are used in this script are: Cell_Count.csv, Peaks_Count.csv
 
-### Heatmap_OCHRO.R
+### Heatmaps_OCHRO.R
 
 This script creates Heatmap for OCHROdb results. It renames all the columns first, to make the heatmap clearer. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: OCHROdb.csv
 
-### Heatmap_SC.R
+### Heatmaps_SC.R
 
 This script creates Heatmap for single-cell data from Zhang et. al. It renames all the columns first, to make the heatmap clearer. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: scATAC.csv
 
-### Heatmap_Categorywise.R
+### Heatmaps_CategoryWise.R
 
-This heatmap can be used in any of the categories in the **3. Categorical Results** folder. The uploaded script is aligned with the requirements of **1. Immune Cells** subfolder. It requires two csv files, one for adult cell types and the other for fetal cell types. The phenotypes should be the same for the two and must be ones that have at least one significant association in either fetal or adult cell type. This script can also be used for all other subfolders, with a few modifications. Column names must be renamed accordingly and the absence of either adult or fetal csv should be accounted for. 
+This heatmap can be used in any of the categories in the **3. Categorical Results** folder. The uploaded script is aligned with the requirements of **01. Immune Cells** subfolder. It requires two csv files, one for adult cell types and the other for fetal cell types. The phenotypes should be the same for the two and must be ones that have at least one significant association in either fetal or adult cell type. This script can also be used for all other subfolders, with a few modifications. Column names must be renamed accordingly and the absence of either adult or fetal csv should be accounted for. 
 
 
 ## 3. Categorical Results
