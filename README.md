@@ -116,3 +116,7 @@ This folder contains results for all adult and fetal single-cell cell types, div
 ## 4. Figures
 
 This folder contains all the figures generated in this project. The figures have been named according to their appearance in the paper, therefore a README file has been added to the folder to make it easy for reading. 
+
+## 5. Supplementary Tables
+
+This folder contains the tables depicting the studies upon which this project was built. The tables have been named according to their order in the paper (supplementary), therefore a README file has been added in the folder for convenience.
