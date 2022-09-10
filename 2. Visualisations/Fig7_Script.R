@@ -27,7 +27,7 @@ pdf(file = "Figure_7.pdf", width=25, height=25)
 
 #For Number of Cells -->
 
-# data <- read.table("Master_Heatmap_Cells.csv", sep=',', header=TRUE)
+# data <- read.table("Fig7_input.csv", sep=',', header=TRUE)
 # colnames(data)[colnames(data) == "ï..Cell"] <- "Categories"
 # 
 # data$Categories <- factor(data$Categories, levels= c('Erythroids', 'Fetal Neural Cells', 'Immune Cells', 'Skeletal Myocytes', 'Neural Cells', 'Endothelial Cells',
