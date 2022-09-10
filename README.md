@@ -59,13 +59,16 @@ Uses ldsc.py to calculate ldscores from annotation files. Inputs required are -b
 
 
 ### Step 3 &#8594; Step3_GWAS.sh
-
-Integrates the GWAS sumstats data with LDSC from previous step. One important requirement of this step is the generation of ".ldct" file. This file contains information about the cell type and the location of their LD score files. *CreateLDCT.py* can be used for this purpose. It can be created manually as well. The format is in the following way: 
+##### (Prerequisite)
+One important pre-requisite to this step is the generation of ".ldct" file. This file contains information about the cell type and the location of their LD score files. *CreateLDCT.py* can be used for this purpose. It can be created manually as well. The format is in the following way: 
 
 >CellType1      ~/ldscores/CellType1.<br />
 >CellType2      ~/ldscores/CellType2.<br />
 
 and so on for all cell types.
+
+##### GWAS Integration
+Integrates the GWAS sumstats data with LDSC from previous step. Below are the inputs and outputs for Step3_GWAS.sh
 
 #### Inputs:
 --h2-cts \<SUMSTATS file\>          &#8594; SUMSTATs file of the phenotype to be analysed<br />
