@@ -60,7 +60,7 @@ Uses ldsc.py to calculate ldscores from annotation files. Inputs required are -b
 
 ### Step 3 &#8594; Step3_GWAS.sh
 ##### (Prerequisite)
-One important pre-requisite to this step is the generation of ".ldct" file. This file contains information about the cell type and the location of their LD score files. *CreateLDCT.py* can be used for this purpose. It can be created manually as well. The format is in the following way: 
+One important pre-requisite to this step is the generation of ".ldct" file. This file contains information about the cell type and the location of their LD score files. *Step3(pre)_CreateLDCT.py* can be used for this purpose. It can be created manually as well. The format is in the following way: 
 
 >CellType1      ~/ldscores/CellType1.<br />
 >CellType2      ~/ldscores/CellType2.<br />
@@ -88,32 +88,28 @@ The final outputs from the above steps are text files containing p-values of ass
 
 ## 2. Visualisation
 
-The R scripts in this folder can be run to visualise the analysis. Plotting all phenotypes can be hectic, therefore select only the ones that have at least one significant (adjusted p-value less than equal to 0.05) cell-type associated with them. This can be done using Choosing_Significant.py mentioned below. 
+The R scripts in this folder can be run to visualise the analysis and generate figures mentioned in the paper. The order has been maintaned, and the input file required for these scripts are present in the Tables folder. The input files and scripts have been named according to the figure they are used for (Fig1_input.csv is used by Fig1_script.R to generate Figure_1.pdf). Plotting all phenotypes can be hectic, therefore select only the ones that have at least one significant (adjusted p-value less than equal to 0.05) cell-type associated with them.
 
-### Choosing_Significant.py
+### Fig1_script.R
 
-Read the result CSV file that has **all** the phenotypes and **all** the cell types. Selects only the phenotypes that have at least one significant association and saves the dataframe in another CSV file.
+This script creates Heatmap for OCHROdb results. It renames all the columns first, to make the heatmap clearer. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: Fig1_input.csv which contains associations of OCHROdb dataset with the 201 GWAS considered. 
 
-### Boxplot_Peaks_and_Cells.R
+### Fig2_script.R
 
-This script was used to create boxplots to visualise the cell types from the study of Zhang et. al. https://www.cell.com/cell/pdf/S0092-8674(21)01279-4.pdf. The relevant csv files that are used in this script are: Cell_Count.csv, Peaks_Count.csv
+This script creates Heatmap for single-cell data from Zhang et. al. It renames all the columns first, to make the heatmap clearer. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: Fig2_input.csv which contains associations of scATAC dataset with the 201 GWAS considered.
 
-### Heatmaps_OCHRO.R
-
-This script creates Heatmap for OCHROdb results. It renames all the columns first, to make the heatmap clearer. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: OCHROdb.csv
-
-### Heatmaps_SC.R
-
-This script creates Heatmap for single-cell data from Zhang et. al. It renames all the columns first, to make the heatmap clearer. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: scATAC.csv
-
-### Heatmaps_CategoryWise.R
+### Fig3-to-6-and-S1-to-S11.R
 
 This heatmap can be used in any of the categories in the **3. Categorical Results** folder. The uploaded script is aligned with the requirements of **01. Immune Cells** subfolder. It requires two csv files, one for adult cell types and the other for fetal cell types. The phenotypes should be the same for the two and must be ones that have at least one significant association in either fetal or adult cell type. This script can also be used for all other subfolders, with a few modifications. Column names must be renamed accordingly and the absence of either adult or fetal csv should be accounted for. 
+
+### Fig7_script.R
+
+This script was used to create boxplots to visualise the cell types from the study of Zhang et. al. https://www.cell.com/cell/pdf/S0092-8674(21)01279-4.pdf. The relevant csv files that are used in this script are: Fig7_input_cells.csv, Fig7_input_peaks.csv
 
 
 ## 3. Categorical Results
 
-This folder contains results for all adult and fetal single-cell cell types, divided into 15 categories based on similarity and tissue composition. Scripts from **2. Visualisation** folder can be used to generate the figures for these datasets.
+This folder contains results for all adult and fetal single-cell cell types, divided into 15 categories based on similarity and tissue composition. Fig3-to-6-and-S1-to-S11.R from **2. Visualisation** folder can be used to generate the figures for these datasets with a few modifications. The script can be directly used to generate **01. Immune cells** result.
 
 
 ## 4. Figures
