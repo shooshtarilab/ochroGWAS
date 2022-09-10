@@ -10,11 +10,11 @@ library(circlize)
 library(RColorBrewer)
 ht_opt$TITLE_PADDING = unit(c(4.5, 4.5), "points")
 
-#All Single-Cell Categories have two csv files, Adult.csv and Fetal.csv
+#Most single-cell Categories have two csv files, Adult.csv and Fetal.csv. Some have only one, the script must be changed accordingly.
 
-adult <- read.table("Adult.csv", sep=',', header=TRUE, row.names = 1)
+adult <- read.table("Adult.csv", sep=',', header=TRUE, row.names = 1)    #Remove if absent
 d1 <- data.matrix(adult, rownames.force = TRUE)
-fetal <- read.table("Fetal.csv", sep=',', header=TRUE, row.names = 1)
+fetal <- read.table("Fetal.csv", sep=',', header=TRUE, row.names = 1)    #Remove if absent
 d2 <- data.matrix(fetal, rownames.force = TRUE)
 
 #Renaming Columns for Immune Cells, similarly for all other
@@ -45,6 +45,7 @@ colnames(d2)[colnames(d2) == "Graves.Disease"] <- "Graves Disease"
 d1 = t(d1)
 d2 = t(d2)
 
+#Change the name of the output figure according to the dataset used
 pdf(file = "Figure_3.pdf", width=11, height=6.5)
 
 #Colour gradient
