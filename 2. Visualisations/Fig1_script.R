@@ -6,10 +6,10 @@ library(RColorBrewer)
 ht_opt$TITLE_PADDING = unit(c(4.5, 4.5), "points")
 
 #Reading csv file with adjusted p-values
-ochro <- read.table("OCHROdb_Significant.csv", sep=',', header=TRUE, row.names = 1)
+ochro <- read.table("Fig1_input.csv", sep=',', header=TRUE, row.names = 1)
 d1 <- data.matrix(ochro, rownames.force = TRUE)
 
-pdf(file = "OCHROdb.pdf", width=8, height=20)
+pdf(file = "Figure_1.pdf", width=8, height=20)
 
 #Renaming Columns 
 colnames(d1)[colnames(d1) == "Graves.Disease"] <- "Grave's Disease"
