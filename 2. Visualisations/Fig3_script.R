@@ -1,3 +1,8 @@
+# This script can be used to generate heatmaps for Figure 3 to Figure 6 and Figure S1 to Figure S11 with a few modifications:
+# (a) Consider if both Adult.csv andd Fetal.csv is required or just one of them
+# (b) Rename the columns according to the CSV files taken. 
+# (c) Rename output figure.
+
 rm(list=ls())
 
 library(ComplexHeatmap)
@@ -40,7 +45,7 @@ colnames(d2)[colnames(d2) == "Graves.Disease"] <- "Graves Disease"
 d1 = t(d1)
 d2 = t(d2)
 
-pdf(file = "test_0.pdf", width=11, height=6.5)
+pdf(file = "Figure_3.pdf", width=11, height=6.5)
 
 #Colour gradient
 col_fun = colorRamp2(c(0, 1), c("#EF3B2C", "white"))
