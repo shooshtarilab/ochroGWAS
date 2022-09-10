@@ -98,9 +98,9 @@ This script creates Heatmap for OCHROdb results. It renames all the columns firs
 
 This script creates Heatmap for single-cell data from Zhang et. al. It renames all the columns first, to make the heatmap clearer. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: Fig2_input.csv which contains associations of scATAC dataset with the 201 GWAS considered.
 
-### Fig3-to-6-and-S1-to-S11.R
+### Fig3_script.R
 
-This heatmap can be used in any of the categories in the **3. Categorical Results** folder. The uploaded script is aligned with the requirements of **01. Immune Cells** subfolder. It requires two csv files, one for adult cell types and the other for fetal cell types. The phenotypes should be the same for the two and must be ones that have at least one significant association in either fetal or adult cell type. This script can also be used for all other subfolders, with a few modifications. Column names must be renamed accordingly and the absence of either adult or fetal csv should be accounted for. 
+This heatmap can be used in any of the categories in the **3. Categorical Results** folder. The uploaded script is aligned with the requirements of **01. Immune Cells** subfolder. It requires two csv files, one for adult cell types and the other for fetal cell types (might require only one, based on the category as some categories have only Adult or only Fetal). The phenotypes should be the same for the two and must be ones that have at least one significant association in either fetal or adult cell type. This script can also be used for all other subfolders, with a few modifications. Column names must be renamed accordingly and the absence of either adult or fetal csv should be accounted for. 
 
 ### Fig7_script.R
 
@@ -109,13 +109,13 @@ This script was used to create boxplots to visualise the cell types from the stu
 
 ## 3. Categorical Results
 
-This folder contains results for all adult and fetal single-cell cell types, divided into 15 categories based on similarity and tissue composition. Fig3-to-6-and-S1-to-S11.R from **2. Visualisation** folder can be used to generate the figures for these datasets with a few modifications. The script can be directly used to generate **01. Immune cells** result.
+This folder contains results for all adult and fetal single-cell cell types, divided into 15 categories based on similarity and tissue composition. Fig3_script.R from **2. Visualisation** folder can be used to generate the figures for these datasets with a few modifications as mentioned above. The script can be directly used to generate **01. Immune cells** heatmap.
 
 
 ## 4. Figures
 
-This folder contains all the figures generated in this project. The figures have been named according to their appearance in the paper, therefore a README file has been added to the folder to make it easy for reading. 
+This folder contains all the figures generated in this project. The figures have been named according to their appearance in the paper.
 
 ## 5. Supplementary Tables
 
-This folder contains the tables depicting the studies upon which this project was built. The tables have been named according to their order in the paper (supplementary), therefore a README file has been added in the folder for convenience.
+This folder contains the tables depicting the studies upon which this project was built. The tables have been named according to their order in the paper (supplementary).
