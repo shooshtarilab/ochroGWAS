@@ -100,7 +100,7 @@ This script creates Heatmap for single-cell data from Zhang et. al. It renames a
 
 ### Fig3_script.R
 
-This heatmap can be used in any of the categories in the **3. Categorical Results** folder. The uploaded script is aligned with the requirements of **01. Immune Cells** subfolder. It requires two csv files, one for adult cell types and the other for fetal cell types (might require only one, based on the category as some categories have only Adult or only Fetal). The phenotypes should be the same for the two and must be ones that have at least one significant association in either fetal or adult cell type. This script can also be used for all other subfolders, with a few modifications. Column names must be renamed accordingly and the absence of either adult or fetal csv should be accounted for. 
+This heatmap can be used in any of the categories in the **3. Categorical Results** folder. The uploaded script is aligned with the requirements of **01. Immune Cells** subfolder. It requires two csv files, one for adult cell types and the other for fetal cell types. The phenotypes should be the same for the two and must be ones that have at least one significant association in either fetal or adult cell type. This script can also be used for all other subfolders, with a few modifications which have been commented in the script. 
 
 ### Fig7_script.R
 
