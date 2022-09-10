@@ -72,7 +72,7 @@ colnames(d1)[colnames(d1) == "AlanineAminotransferaseLevels"] <- "Alanine Aminot
 colnames(d1)[colnames(d1) == "TotalCholestrolLevels"] <- "Total Cholestrol Levels"
 
 
-pdf(file = "scATAC.pdf", width=12, height=30)
+pdf(file = "Figure_2.pdf", width=12, height=30)
 
 hm <- Heatmap(d1,
               col = colorRamp2(c(0, 0.05, 0.05001, 0.1, 0.10001, 1), c("darkred","darkred","tomato", "tomato","wheat", "lightyellow")),
