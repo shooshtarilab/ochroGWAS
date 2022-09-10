@@ -2,12 +2,12 @@ library(ggplot2)
 
 #Un-comment Cells/Peaks section to run that script. The custom order is such that peaks are sorted in increasing order.
 
-pdf(file = "XYZ_1.pdf", width=25, height=25)
+pdf(file = "Figure_7.pdf", width=25, height=25)
 
 #To Create Peaks Map --->
 
 
-# data <- read.table("Master_Heatmap_Peaks.csv", sep=',', header=TRUE)
+# data <- read.table("Fig7_input.csv", sep=',', header=TRUE)
 # colnames(data)[colnames(data) == "ï..Cell"] <- "Categories"
 # 
 # data$Categories <- factor(data$Categories, levels= c('Erythroids', 'Fetal Neural Cells', 'Immune Cells', 'Skeletal Myocytes', 'Neural Cells', 'Endothelial Cells',
