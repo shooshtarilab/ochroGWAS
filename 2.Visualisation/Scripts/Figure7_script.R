@@ -2,12 +2,12 @@ library(ggplot2)
 
 #Un-comment Cells/Peaks section to run that script. The custom order is such that peaks are sorted in increasing order.
 
-pdf(file = "Figure_7.pdf", width=25, height=25)
+#png(file = "Figure7_peaks.png", width=25, height=25)
 
 #To Create Peaks Map --->
 
 
-# data <- read.table("Fig7_input_peaks.csv", sep=',', header=TRUE)
+# data <- read.table("Figure7_input_peaks.csv", sep=',', header=TRUE)
 # colnames(data)[colnames(data) == "ï..Cell"] <- "Categories"
 # 
 # data$Categories <- factor(data$Categories, levels= c('Erythroids', 'Fetal Neural Cells', 'Immune Cells', 'Skeletal Myocytes', 'Neural Cells', 'Endothelial Cells',
@@ -27,9 +27,10 @@ pdf(file = "Figure_7.pdf", width=25, height=25)
 
 #For Number of Cells -->
 
-# data <- read.table("Fig7_input_cells.csv", sep=',', header=TRUE)
+# data <- read.table("Figure7_input_nuclei.csv", sep=',', header=TRUE)
 # colnames(data)[colnames(data) == "ï..Cell"] <- "Categories"
 # 
+# png(file = "Figure7_nuclei.png", width=25, height=25)
 # data$Categories <- factor(data$Categories, levels= c('Erythroids', 'Fetal Neural Cells', 'Immune Cells', 'Skeletal Myocytes', 'Neural Cells', 'Endothelial Cells',
 #                                                      'Adult Stromal Cells', 'Gastric and GI Epithelial', 'Stromal Cells', 'Epithelial', 'Adrenal Cortical',
 #                                                      'Islets and Neuroendocrine', 'Hepatocyte', 'Cardiomyocytes', 'Follicular and Placental'))
