@@ -15,21 +15,8 @@ colnames(d2)[colnames(d2) == "Mean.Corpuscular.Hemoglobin"] <- "Mean Corpuscular
 colnames(d2)[colnames(d2) == "Mean.Corpuscular.Hemoglobin.Concentration"] <- "Mean Corpuscular Hemoglobin Concentration"
 colnames(d2)[colnames(d2) == "Mean.Corpuscular.Volume"] <- "Mean Corpuscular Volume"
 colnames(d2)[colnames(d2) == "Platelet.Count"] <- "Platelet Count"
-colnames(d2)[colnames(d2) == "Acute.Glomerulo.Nephritis"] <- "Acute Glomerulo Nephritis"
-colnames(d2)[colnames(d2) == "Aspartate.Aminotransferase.Levels"] <- "Aspartate Aminotransferase Levels"
-colnames(d2)[colnames(d2) == "Monocyte.Count"] <- "Monocyte Count"
-colnames(d2)[colnames(d2) == "Basophil.Count"] <- "Basophil Count"
+colnames(d2)[colnames(d2) == "Hemoglobin"] <- "Hemoglobin"
 colnames(d2)[colnames(d2) == "Hemoglobin.A1c.Levels"] <- "Hemoglobin A1c Levels"
-colnames(d2)[colnames(d2) == "Atopic.Dermatitis"] <- "Atopic Dermatitis"
-colnames(d2)[colnames(d2) == "Medication.Use.Adrenergics.Inhalants"] <- "Medication Use Adrenergics Inhalants"
-colnames(d2)[colnames(d2) == "Medication.Use.Glucocorticoids"] <- "Medication Use Glucocorticoids"
-colnames(d2)[colnames(d2) == "Pediatric.Asthma"] <- "Pediatric Asthma"
-colnames(d2)[colnames(d2) == "Hashimoto.Thyroiditis"] <- "Hashimoto Thyroiditis"
-colnames(d2)[colnames(d2) == "Medication.Use.Thyroid.Preparation"] <- "Medication Use Thyroid Preparation"
-colnames(d2)[colnames(d2) == "Eosinophil.Counts"] <- "Eosinophil Counts"
-colnames(d2)[colnames(d2) == "Lymphocyte.Counts"] <- "Lymphocyte Counts"
-colnames(d2)[colnames(d2) == "Head.Injury"] <- "Head Injury"
-colnames(d2)[colnames(d2) == "Graves.Disease"] <- "Graves Disease"
 
 #Transposing for Heatmaps
 
