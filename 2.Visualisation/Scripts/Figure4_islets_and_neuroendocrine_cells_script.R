@@ -5,9 +5,9 @@ library(circlize)
 library(RColorBrewer)
 ht_opt$TITLE_PADDING = unit(c(4.5, 4.5), "points")
 
-adult <- read.table("Figure3_immune_cells_adult.csv", sep=',', header=TRUE, row.names = 1)    #Remove if absent
+adult <- read.table("Figure4_islets_and_neuroendocrine_cells_adult.csv", sep=',', header=TRUE, row.names = 1)
 d1 <- data.matrix(adult, rownames.force = TRUE)
-fetal <- read.table("Figure3_immune_cells_fetal.csv", sep=',', header=TRUE, row.names = 1)    #Remove if absent
+fetal <- read.table("Figure4_islets_and_neuroendocrine_cells_fetal.csv", sep=',', header=TRUE, row.names = 1)
 d2 <- data.matrix(fetal, rownames.force = TRUE)
 
 #Renaming Columns for Islets and Neuroendocrine cells
@@ -25,7 +25,7 @@ d1 = t(d1)
 d2 = t(d2)
 
 #Output
-png("Figure3.png", width = 11, height = 6.5, units = 'cm', res = 600)
+png("Figure4.png", width = 11, height = 6.5, units = 'cm', res = 600)
 
 #Colour gradient
 col_fun = colorRamp2(c(0, 1), c("#EF3B2C", "white"))
