@@ -9,7 +9,7 @@ ht_opt$TITLE_PADDING = unit(c(4.5, 4.5), "points")
 ochro <- read.table("Figure1.csv", sep=',', header=TRUE, row.names = 1)
 d1 <- data.matrix(ochro, rownames.force = TRUE)
 
-png(file = "Figure1.png", width=8, height=20)
+png(file = "Figure1.png",  height=9500, width=5000, res=600)
 
 #Renaming Columns 
 colnames(d1)[colnames(d1) == "Graves.Disease"] <- "Grave's Disease"
