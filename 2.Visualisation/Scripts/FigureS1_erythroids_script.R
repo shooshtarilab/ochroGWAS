@@ -23,7 +23,7 @@ colnames(d2)[colnames(d2) == "Hemoglobin.A1c.Levels"] <- "Hemoglobin A1c Levels"
 d1 = t(d2)
 
 #Output
-png("Figure3.png", res=300, height=1500, width=2500)
+png("FigureS1.png", res=300, height=1500, width=2500)
 
 #Colour gradient
 col_fun = colorRamp2(c(0, 1), c("#EF3B2C", "white"))
