@@ -88,6 +88,4 @@ The final outputs from the above steps are text files containing p-values of ass
 
 ## 2. Visualisation
 
-### Scripts
-
-The R scripts in this folder can be run to visualise the analysis and generate figures mentioned in the paper. The order has been maintaned, and the input file required for these scripts are present in the **Input_Data** folder. The input files and scripts have been named according to the figure they are used for (Figure3_immune_cells_adult.csv and Figure3_immune_cells_fetal.csv is used by Figure3_immune_cells_script.R to generate Figure1.png). Similarly for the rest. The output that could be generated (the main and supplementary figures of the paper) are in the **Output_Figures** folder.
+The R scripts in **Scripts** folder can be run to visualise the analysis and generate figures mentioned in the paper. The order has been maintaned, and the input file required for these scripts are present in the **Input_Data** folder. The input files and scripts have been named according to the figure they are used for (Figure3_immune_cells_adult.csv and Figure3_immune_cells_fetal.csv is used by Figure3_immune_cells_script.R to generate Figure1.png). Similarly for the rest. The output that could be generated (the main and supplementary figures of the paper) are in the **Output_Figures** folder.
