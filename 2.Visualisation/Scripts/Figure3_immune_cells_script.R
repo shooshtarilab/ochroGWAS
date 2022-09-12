@@ -39,7 +39,7 @@ d1 = t(d1)
 d2 = t(d2)
 
 #Output
-png("Figure3.png", , width=4000, height=1750, res=300)
+png("Figure3.png", width=4000, height=1750, res=300)
 
 #Colour gradient
 col_fun = colorRamp2(c(0, 1), c("#EF3B2C", "white"))
