@@ -1,8 +1,3 @@
-# This script can be used to generate heatmaps for Figure 3 to Figure 6 and Figure S1 to Figure S11 with a few modifications:
-# (a) Consider if both Adult.csv andd Fetal.csv is required or just one of them
-# (b) Rename the columns according to the CSV files taken. 
-# (c) Rename output figure.
-
 rm(list=ls())
 
 library(ComplexHeatmap)
@@ -10,14 +5,12 @@ library(circlize)
 library(RColorBrewer)
 ht_opt$TITLE_PADDING = unit(c(4.5, 4.5), "points")
 
-#Most single-cell Categories have two csv files, Adult.csv and Fetal.csv. Some have only one, the script must be changed accordingly.
-
 adult <- read.table("Figure3_immune_cells_adult.csv", sep=',', header=TRUE, row.names = 1)    #Remove if absent
 d1 <- data.matrix(adult, rownames.force = TRUE)
 fetal <- read.table("Figure3_immune_cells_fetal.csv", sep=',', header=TRUE, row.names = 1)    #Remove if absent
 d2 <- data.matrix(fetal, rownames.force = TRUE)
 
-#Renaming Columns for Immune Cells, similarly for all other
+#Renaming Columns for Immune Cells
 
 colnames(d2)[colnames(d2) == "Red.Blood.Cell.Count"] <- "Red Blood Cell Count"
 colnames(d2)[colnames(d2) == "Mean.Corpuscular.Hemoglobin"] <- "Mean Corpuscular Hemoglobin"
@@ -45,7 +38,7 @@ colnames(d2)[colnames(d2) == "Graves.Disease"] <- "Graves Disease"
 d1 = t(d1)
 d2 = t(d2)
 
-#Change the name of the output figure according to the dataset used
+#Output
 png("Figure3.png", width = 11, height = 6.5, units = 'cm', res = 600)
 
 #Colour gradient
