@@ -1,3 +1,8 @@
+##########################################################################################
+# Compile all open chromatin region locations from BED files into a single reference library, and 
+# expand the start and ends of OCR by 100 bp each
+##########################################################################################
+
 # include path to list of bed files
 path <- ""
 files <- list.files(path=path, pattern="*.bed", full.names = TRUE, recursive = FALSE)
