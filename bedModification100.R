@@ -1,3 +1,7 @@
+##########################################################################################
+# Expand the start and ends of open chromatin regions from BED file format by 100 bp each
+##########################################################################################
+
 # change the directory to point to all files that need to be modded. Make sure working directory is NOT in that same directory
 path <- ""
 files <- list.files(path=path, pattern="*.bed", full.names = TRUE, recursive = FALSE)
