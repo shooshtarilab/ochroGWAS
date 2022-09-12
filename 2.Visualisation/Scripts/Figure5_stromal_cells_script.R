@@ -10,7 +10,7 @@ d1 <- data.matrix(adult, rownames.force = TRUE)
 fetal <- read.table("Figure5_stromal_cells_fetal.csv", sep=',', header=TRUE, row.names = 1)    #Remove if absent
 d2 <- data.matrix(fetal, rownames.force = TRUE)
 
-#Renaming Columns for Immune Cells
+#Renaming Columns
 
 colnames(d2)[colnames(d2) == "Chronic.Hepatitis.C.Infection"] <- "Chronic Hepatitis C Infection"
 colnames(d2)[colnames(d2) == "Medical.Used.Agents.on.Renin.Angiotensin.System"] <- "Medical Used Agents on Renin Angiotensin System"
