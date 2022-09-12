@@ -10,7 +10,7 @@ d1 <- data.matrix(adult, rownames.force = TRUE)
 fetal <- read.table("Figure4_islets_and_neuroendocrine_cells_fetal.csv", sep=',', header=TRUE, row.names = 1)
 d2 <- data.matrix(fetal, rownames.force = TRUE)
 
-#Renaming Columns for Islets and Neuroendocrine cells
+#Renaming Columns
 
 colnames(d2)[colnames(d2) == "Chronic.Hepatitis.C.Infection"] <- "Chronic Hepatitis C Infection"
 colnames(d2)[colnames(d2) == "Prostate.Cancer"] <- "Prostate Cancer"
