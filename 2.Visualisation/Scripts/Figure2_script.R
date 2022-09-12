@@ -72,7 +72,7 @@ colnames(d1)[colnames(d1) == "AlanineAminotransferaseLevels"] <- "Alanine Aminot
 colnames(d1)[colnames(d1) == "TotalCholestrolLevels"] <- "Total Cholestrol Levels"
 
 
-png(file = "Figure2.png", width=12, height=30)
+png(file = "Figure2.png", height=35000, width= 14000, res=1200)
 
 hm <- Heatmap(d1,
               col = colorRamp2(c(0, 0.05, 0.05001, 0.1, 0.10001, 1), c("darkred","darkred","tomato", "tomato","wheat", "lightyellow")),
