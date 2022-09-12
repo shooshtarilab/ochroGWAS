@@ -10,7 +10,7 @@ d1 <- data.matrix(adult, rownames.force = TRUE)
 fetal <- read.table("Figure3_immune_cells_fetal.csv", sep=',', header=TRUE, row.names = 1)    #Remove if absent
 d2 <- data.matrix(fetal, rownames.force = TRUE)
 
-#Renaming Columns for Immune Cells
+#Renaming Columns
 
 colnames(d2)[colnames(d2) == "Red.Blood.Cell.Count"] <- "Red Blood Cell Count"
 colnames(d2)[colnames(d2) == "Mean.Corpuscular.Hemoglobin"] <- "Mean Corpuscular Hemoglobin"
