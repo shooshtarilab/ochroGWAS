@@ -5,9 +5,9 @@ library(circlize)
 library(RColorBrewer)
 ht_opt$TITLE_PADDING = unit(c(4.5, 4.5), "points")
 
-adult <- read.table("Figure3_immune_cells_adult.csv", sep=',', header=TRUE, row.names = 1)    #Remove if absent
+adult <- read.table("Figure3_immune_cells_adult.csv", sep=',', header=TRUE, row.names = 1)    
 d1 <- data.matrix(adult, rownames.force = TRUE)
-fetal <- read.table("Figure3_immune_cells_fetal.csv", sep=',', header=TRUE, row.names = 1)    #Remove if absent
+fetal <- read.table("Figure3_immune_cells_fetal.csv", sep=',', header=TRUE, row.names = 1)    
 d2 <- data.matrix(fetal, rownames.force = TRUE)
 
 #Renaming Columns
