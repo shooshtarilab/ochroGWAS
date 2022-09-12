@@ -88,34 +88,6 @@ The final outputs from the above steps are text files containing p-values of ass
 
 ## 2. Visualisation
 
-The R scripts in this folder can be run to visualise the analysis and generate figures mentioned in the paper. The order has been maintaned, and the input file required for these scripts are present in the Tables folder. The input files and scripts have been named according to the figure they are used for (Fig1_input.csv is used by Fig1_script.R to generate Figure_1.pdf). Plotting all phenotypes can be hectic, therefore select only the ones that have at least one significant (adjusted p-value less than equal to 0.05) cell-type associated with them.
+### Scripts
 
-### Fig1_script.R
-
-This script creates Heatmap for OCHROdb results. It renames all the columns first, to make the heatmap clearer. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: Fig1_input.csv which contains associations of OCHROdb dataset with the 201 GWAS considered. 
-
-### Fig2_script.R
-
-This script creates Heatmap for single-cell data from Zhang et. al. It renames all the columns first, to make the heatmap clearer. Comments have been made in the script to make it more readable. The relevant csv files that are used in this script are: Fig2_input.csv which contains associations of scATAC dataset with the 201 GWAS considered.
-
-### Fig3_script.R
-
-This heatmap can be used in any of the categories in the **3. Categorical Results** folder. The uploaded script is aligned with the requirements of **01. Immune Cells** subfolder. It requires two csv files, one for adult cell types and the other for fetal cell types. The phenotypes should be the same for the two and must be ones that have at least one significant association in either fetal or adult cell type. This script can also be used for all other subfolders, with a few modifications which have been commented in the script. 
-
-### Fig7_script.R
-
-This script was used to create boxplots to visualise the cell types from the study of Zhang et. al. https://www.cell.com/cell/pdf/S0092-8674(21)01279-4.pdf. The relevant csv files that are used in this script are: Fig7_input_cells.csv, Fig7_input_peaks.csv
-
-
-## 3. Categorical Results
-
-This folder contains results for all adult and fetal single-cell cell types, divided into 15 categories based on similarity and tissue composition. Fig3_script.R from **2. Visualisation** folder can be used to generate the figures for these datasets with a few modifications as mentioned above. The script can be directly used to generate **01. Immune cells** heatmap.
-
-
-## 4. Figures
-
-This folder contains all the figures generated in this project. The figures have been named according to their appearance in the paper.
-
-## 5. Supplementary Tables
-
-This folder contains the tables depicting the studies upon which this project was built. The tables have been named according to their order in the paper (supplementary).
+The R scripts in this folder can be run to visualise the analysis and generate figures mentioned in the paper. The order has been maintaned, and the input file required for these scripts are present in the **Input_Data** folder. The input files and scripts have been named according to the figure they are used for (Figure3_immune_cells_adult.csv and Figure3_immune_cells_fetal.csv is used by Figure3_immune_cells_script.R to generate Figure1.png). Similarly for the rest. The output that could be generated (the main and supplementary figures of the paper) are in the **Output_Figures** folder.
